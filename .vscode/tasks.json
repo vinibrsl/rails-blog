@@ -8,6 +8,12 @@
       "type": "shell",
       "command": "htmlbeautifier ${file}",
       "problemMatcher": []
+    },
+    {
+      "label": "RuboCop fix file",
+      "type": "shell",
+      "command": "rubocop -a ${file}",
+      "problemMatcher": []
     }
   ]
 }
