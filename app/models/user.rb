@@ -4,7 +4,7 @@ class User < ApplicationRecord
   has_many :articles
   before_save { email.downcase! }
   has_secure_password
-  
+
   validates :username,
             uniqueness: { case_sensitive: false },
             presence: true,
